@@ -1,8 +1,21 @@
-.custom-navbar {
-  background-color: rgb(78, 19, 78);
+:root {
+  --purple: #5f147d;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 150%;
 }
 
 .custom-btn {
-  background-color: rgb(78, 19, 78);
+  background-color: var(--purple);
   color: white;
 }
