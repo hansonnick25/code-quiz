@@ -123,7 +123,7 @@ let endQuiz = function () {
   timerEl.textContent = '🎉 GAME COMPLETE 🎉'
 }
 
-let submitHighscore = function () {
+let submitNewScore = function () {
   let newName = submittedName.value.trim()
   if (newName == '') alert('Please enter a name!')
   else {
@@ -149,20 +149,16 @@ let sortHighscores = function () {
 let displayHighscores = function () {
   tableBodyEl.innerHTML = ''
   for (let i = 0; i < highscores.length; i++) {
-    tableBodyEl.innerHTML +=
-      '<tr><th scope="row">' +
-      (i + 1) +
-      '</th><td>' +
-      highscores[i].name +
-      '</td><td>' +
-      highscores[i].score +
-      '</td><td>' +
-      highscores[i].correct +
-      '</td></tr>'
+    tableBodyEl.innerHTML += `<tr> <th scope="row">${i + 1}</th> <td>${
+      highscores[i].name
+    }</td> <td>${highscores[i].score}</td> <td>${
+      highscores[i].correct
+    }</td> </tr>`
   }
 }
 
 let restartQuiz = function () {
+  correctAnswers = 0
   currQuestionIndex = 0
   timeLeft = 60
 
@@ -181,5 +177,5 @@ let countdownTimer = function () {
 }
 
 startBtn.onclick = startQuiz
-submitBtn.onclick = submitHighscore
+submitBtn.onclick = submitNewScore
 restartBtn.onclick = restartQuiz
