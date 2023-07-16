@@ -28,7 +28,7 @@
     <!-- Quiz Start -->
     <div class="container-fluid">
       <div id="quiz-start" class="row text-center">
-        <div id="start-screen" class="col-6 mx-auto p-2">
+        <div id="start-screen" class="col-10 col-lg-6 mx-auto p-2">
           <h2 class="h1 mb-3">Timed JavaScript Quiz</h2>
           <p>
             You have <span>60</span> seconds to answer 5 JavaScript questions to
@@ -46,7 +46,7 @@
 
       <!-- Questions Section -->
       <div id="questions" class="row text-center d-none">
-        <div class="col-8 p-2 mx-auto">
+        <div class="col-12 col-lg-6 mx-auto p-2">
           <h2 id="question-words"></h2>
           <div id="options"></div>
         </div>
@@ -54,14 +54,14 @@
 
       <!-- After Quiz HTML -->
       <div id="quiz-end" class="row text-center mx-auto d-none">
-        <div class="col-6 mx-auto p-2">
+        <div class="col-10 col-lg-6 mx-auto p-2">
           <h2>🎉 GAME COMPLETE 🎉</h2>
           <h3>Your final score is: <span id="score-final"></span></h3>
           <p>
             You got <span id="correct-final"></span> out of 5 answers correct
           </p>
           <div class="row text-center mx-auto">
-            <div class="col-6 mx-auto p-2">
+            <div class="col-10 col-lg-6 mx-auto p-2">
               <div class="input-group">
                 <input
                   id="name"
@@ -69,14 +69,19 @@
                   class="form-control was-validated"
                   placeholder="Your Name"
                 />
-                <div class="input-group-append">
-                  <button id="submit" class="btn btn-lg bg-dark text-white">
-                    Submit
-                  </button>
-                  <button id="restart" class="btn btn-lg bg-dark text-white">
-                    Restart
-                  </button>
-                </div>
+                <br <div class="row text-center mx-auto" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 col-lg-6 mx-auto p-2">
+              <div class="input-group-append">
+                <button id="submit" class="btn btn-lg bg-dark text-white">
+                  Submit
+                </button>
+                <button id="restart" class="btn btn-lg bg-dark text-white">
+                  Restart
+                </button>
               </div>
             </div>
           </div>
@@ -84,7 +89,7 @@
       </div>
 
       <div id="highscores" class="row text-center d-none">
-        <div class="col-6 mx-auto">
+        <div class="col-10 col-lg-6 mx-auto p-2">
           <table id="highscores-table" class="table table-hover table-sm">
             <thead id="table-head" class="thead-dark">
               <tr>
